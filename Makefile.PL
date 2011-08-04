@@ -29,7 +29,7 @@ all_from 'lib/re/engine/boost.pm';
 use_xshelper;
 cc_warnings;
 cc_src_paths 'src';
-cc_libs 'boost_regex';
+cc_libs 'boost_regex-mt', 'boost_regex';
 
 makemaker_args CC => 'g++';
 
